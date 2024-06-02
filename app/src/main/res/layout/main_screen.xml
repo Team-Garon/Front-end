@@ -6,69 +6,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
     <LinearLayout
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="148dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="1dp"
+        android:gravity="top"
         android:background="@color/main_color"
         >
         <ImageButton
-            android:id="@+id/tab_button"
-            android:layout_width="37dp"
-            android:layout_height="32.56dp"
+            android:id="@+id/menu_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="34dp"
-            android:layout_marginTop="91dp"
-            android:background="@drawable/tab_button"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/tab_button"
+            android:background="@color/main_color"
+
 
             />
     </LinearLayout>
 
-    <View
-        android:id="@+id/vector_9"
-        android:layout_width="347dp"
-        android:layout_height="4dp"
-        android:background="@color/sub_color"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="171dp" />
-
     <RelativeLayout
         android:id="@+id/department_View"
-        android:layout_width="409dp"
-        android:layout_height="197dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="189dp">
+        >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="347dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/sub_color"
+            />
+
 
         <ImageView
             android:id="@+id/department_image"
             android:layout_width="160dp"
             android:layout_height="164dp"
-            android:layout_marginLeft="34dp"
+            android:layout_below="@+id/line"
             android:layout_marginTop="15dp"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="190dp"
-            tools:srcCompat=""
+            android:layout_marginLeft="34dp"
             android:background="@drawable/drawable_resource_file"/>
 
         <TextView
-            android:id="@+id/department"
-            android:layout_width="177dp"
+            android:id="@+id/department_input"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="30dp"
-            android:text="컴퓨터 공학과"
+            android:layout_marginTop="15dp"
+            android:text="컴퓨터공학과"
             android:textSize="24dp" />
 
         <TextView
             android:id="@+id/outline"
-            android:layout_width="172dp"
+            android:layout_width="150dp"
             android:layout_height="92dp"
+            android:layout_below="@+id/department_input"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="5dp"
             android:text="간단소개" />
-    </RelativeLayout>
 
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_width="347dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/department_image"
+            android:layout_marginTop="15dp"
+            android:background="@color/sub_color"
+            />
+    </RelativeLayout>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

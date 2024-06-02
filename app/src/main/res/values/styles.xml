@@ -14,5 +14,16 @@
 <!--        <item name="android:fontFamily">@font/custom_font</item>-->
 <!--        <item name="android:buttonStyle">@style/CustomButtonStyle</item>-->
     </style>
+<!--    Home Screen Styles  -->
+    <style name="text_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+    </style>
+    <style name="text_detail_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+    </style>
 
 </resources>
