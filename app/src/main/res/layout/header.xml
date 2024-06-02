@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="170dp"
-    android:background="@color/cardview_dark_background"
-    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    >
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Item"
-        android:textSize="50dp" />
+
+    <LinearLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="411dp"
+        android:layout_height="148dp"
+        android:background="#8DA7BE"
+
+        >
+
+
+        <ImageButton
+            android:id="@+id/tab_button"
+            android:layout_width="37dp"
+            android:layout_height="32.56dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="91dp"
+            android:background="@drawable/tab_button"
+
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
+
+<!-- 이전 코드 -->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="170dp"-->
+<!--    android:background="@color/cardview_dark_background"-->
+<!--    android:gravity="center"-->
+<!--    android:orientation="vertical"-->
+<!--    android:theme="@style/ThemeOverlay.AppCompat.Dark">-->
+<!--    -->
+<!--    -->
+<!--    <TextView-->
+<!--        android:id="@+id/text"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Select Item"-->
+<!--        android:textSize="50dp" />-->
+
+<!--</LinearLayout>-->
