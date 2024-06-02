@@ -11,6 +11,7 @@
         <LinearLayout
             android:layout_width="411dp"
             android:layout_height="846dp"
+            android:orientation="vertical"
             >
 
             <LinearLayout
@@ -25,32 +26,133 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="15dp"
                     android:text="@string/text_detail_string"
                     android:textAppearance="@style/text_style"
                     app:layout="@layout/input_text"
                     >
                 </TextView>
-                <include
-                    android:id="@+id/input_day"
-                    layout="@layout/input_text"/>
-                <include
-                    android:id="@+id/input_time"
-                    layout="@layout/input_text"/><include
-                android:id="@+id/input_day"
-                layout="@layout/input_text"/>
-                <include
-                    android:id="@+id/input_time"
-                    layout="@layout/input_text"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/text_day"
+                        android:textAppearance="@style/text_detail_style"
+                        >
+                    </TextView>
+                    <EditText
+                        android:layout_marginTop="6dp"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:textAppearance="style"
+                        android:labelFor="@+id/day_label"
+                        />
+                </LinearLayout>
 
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="시간 *"
+                        android:textAppearance="@style/text_detail_style"
+                        >
+                    </TextView>
+                    <EditText
+                        android:id="@+id/time_input"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:textAppearance="style"
+                        />
+                </LinearLayout>
 
-                <include
-                    android:id="@+id/input_day"
-                    layout="@layout/input_text"/>
-                <include
-                    android:id="@+id/input_time"
-                    layout="@layout/input_text"/>
+            </LinearLayout>
+<!--  개인정보 입력하기 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/text_detail_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/text_detail_string_2"
+                    android:textAppearance="@style/text_style"
+                    app:layout="@layout/input_text"
+                    >
+                </TextView>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="학번 *"
+                        android:textAppearance="@style/text_detail_style"
+                        >
+                    </TextView>
+                    <EditText
+                        android:id="@+id/student_id_input"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:textAppearance="@style/text_hint_style"
+                        android:hint="학번을 입력해주세요"
+                        android:selectAllOnFocus="true"
+                        android:textColorHighlight="@color/highlight_color"
+
+                        />
+                </LinearLayout>
             </LinearLayout>
 
+            <RelativeLayout
+                android:id="@+id/button_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="신청하기"
+                    android:textAppearance="@style/button_style"
+
+
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>

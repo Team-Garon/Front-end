@@ -7,6 +7,7 @@
     android:layout_marginTop="17dp"
     >
     <TextView
+        android:id="@+id/day_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
@@ -22,7 +23,10 @@
         android:padding="10dp"
         android:background="@drawable/edittext_background"
         android:textAppearance="style"
+        android:labelFor="@+id/day_label"
+        />
 
-        >
-    </EditText>
+
+
+
 </LinearLayout>
