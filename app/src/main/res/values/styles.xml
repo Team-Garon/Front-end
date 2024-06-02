@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_appbar" >
+        <item name="android:background">#DFDFDF</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="android:textColor">@color/textColor</item>-->
+<!--        <item name="android:fontFamily">@font/custom_font</item>-->
+<!--        <item name="android:buttonStyle">@style/CustomButtonStyle</item>-->
+    </style>
+
+</resources>
