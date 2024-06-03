@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.moosbi_application_screen);
 
         startDateEditText = findViewById(R.id.date_input);
         startTimeEditText = findViewById(R.id.time_input);
