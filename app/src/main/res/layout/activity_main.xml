@@ -10,19 +10,239 @@
     tools:openDrawer="start">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
-        </RelativeLayout>
-    </LinearLayout>
-    <include
-        layout="@layout/appbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="347dp"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/sub_color"
+                        />
+                    <ImageView
+                        android:id="@+id/department_image_1"
+                        android:layout_width="160dp"
+                        android:layout_height="164dp"
+                        android:layout_below="@+id/line"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="34dp"
+                        android:background="@drawable/drawable_resource_file"/>
+
+                    <TextView
+                        android:id="@+id/department_input_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="15dp"
+                        android:text="컴퓨터공학과"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/outline_1"
+                        android:layout_width="150dp"
+                        android:layout_height="92dp"
+                        android:layout_below="@+id/department_input_1"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="5dp"
+                        android:text="간단소개" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:id="@+id/line_2"
+                        android:layout_width="347dp"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/sub_color"
+                        />
+                    <ImageView
+                        android:id="@+id/department_image_2"
+                        android:layout_width="160dp"
+                        android:layout_height="164dp"
+                        android:layout_below="@+id/line_2"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="34dp"
+                        android:background="@drawable/drawable_resource_file"/>
+
+                    <TextView
+                        android:id="@+id/department_input_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line_2"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="15dp"
+                        android:text="컴퓨터공학과"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/outline_2"
+                        android:layout_width="150dp"
+                        android:layout_height="92dp"
+                        android:layout_below="@+id/department_input_2"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="5dp"
+                        android:text="간단소개" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:id="@+id/line_3"
+                        android:layout_width="347dp"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/sub_color"
+                        />
+                    <ImageView
+                        android:id="@+id/department_image_3"
+                        android:layout_width="160dp"
+                        android:layout_height="164dp"
+                        android:layout_below="@+id/line_3"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="34dp"
+                        android:background="@drawable/drawable_resource_file"/>
+
+                    <TextView
+                        android:id="@+id/department_input_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line_3"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="15dp"
+                        android:text="컴퓨터공학과"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/outline_3"
+                        android:layout_width="150dp"
+                        android:layout_height="92dp"
+                        android:layout_below="@+id/department_input_3"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="5dp"
+                        android:text="간단소개" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:id="@+id/line_4"
+                        android:layout_width="347dp"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/sub_color"
+                        />
+                    <ImageView
+                        android:id="@+id/department_image_4"
+                        android:layout_width="160dp"
+                        android:layout_height="164dp"
+                        android:layout_below="@+id/line_4"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="34dp"
+                        android:background="@drawable/drawable_resource_file"/>
+
+                    <TextView
+                        android:id="@+id/department_input_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line_4"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="15dp"
+                        android:text="컴퓨터공학과"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/outline_4"
+                        android:layout_width="150dp"
+                        android:layout_height="92dp"
+                        android:layout_below="@+id/department_input_4"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="5dp"
+                        android:text="간단소개" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:id="@+id/line_5"
+                        android:layout_width="347dp"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/sub_color"
+                        />
+                    <ImageView
+                        android:id="@+id/department_image_5"
+                        android:layout_width="160dp"
+                        android:layout_height="164dp"
+                        android:layout_below="@+id/line_5"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="34dp"
+                        android:background="@drawable/drawable_resource_file"/>
+
+                    <TextView
+                        android:id="@+id/department_input_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line_5"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="15dp"
+                        android:text="컴퓨터공학과"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/outline_5"
+                        android:layout_width="150dp"
+                        android:layout_height="92dp"
+                        android:layout_below="@+id/department_input_5"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="5dp"
+                        android:text="간단소개" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ><View
+                    android:id="@+id/line_bottom"
+                    android:layout_width="347dp"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/sub_color"
+                    />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -34,4 +254,4 @@
         app:headerLayout="@layout/header"/>
 
 
-</androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>

@@ -3,10 +3,10 @@
     >
     <item
         android:id="@+id/menuitem1"
-        android:title="menuItem1" />
+        android:title="무스비 신청하기" />
     <item
         android:id="@+id/menuitem2"
-        android:title="menuItem2" />
+        android:title="부스 신청하기" />
     <item
         android:id="@+id/action_settings"
         android:title="Settings"

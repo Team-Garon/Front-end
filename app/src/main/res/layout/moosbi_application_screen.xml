@@ -54,8 +54,9 @@
                         android:layout_gravity="center"
                         android:padding="10dp"
                         android:background="@drawable/edittext_background"
-                        android:textAppearance="style"
+                        android:textAppearance="@style"
                         android:labelFor="@+id/day_label"
+
                         />
                 </LinearLayout>
 <!--시간 입력창-->

@@ -11,57 +11,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="148dp"
-        android:gravity="top"
-        android:background="@color/main_color"
-        >
-        <ImageButton
-            android:id="@+id/menu_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="34dp"
-            android:layout_marginTop="80dp"
-            android:src="@drawable/tab_button"
-            android:background="@color/main_color"
-
-
-            />
-    </LinearLayout>
-
+    <include layout="@layout/header"/>
     <RelativeLayout
         android:id="@+id/department_View"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:orientation="vertical"
         >
-
         <View
-            android:id="@+id/line"
-            android:layout_width="347dp"
-            android:layout_height="2dp"
-            android:layout_centerHorizontal="true"
-            android:background="@color/sub_color"
-            />
-
-
-        <ImageView
-            android:id="@+id/department_image"
-            android:layout_width="160dp"
-            android:layout_height="164dp"
-            android:layout_below="@+id/line"
+            android:id="@+id/background"
+            android:layout_width="370dp"
+            android:layout_height="550dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="34dp"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/drawable_resource_file"/>
 
         <TextView
             android:id="@+id/department_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/line"
             android:layout_marginLeft="220dp"
             android:layout_marginTop="15dp"
             android:text="컴퓨터공학과"
@@ -75,16 +43,6 @@
             android:layout_marginLeft="220dp"
             android:layout_marginTop="5dp"
             android:text="간단소개" />
-
-        <View
-            android:id="@+id/line_bottom"
-            android:layout_width="347dp"
-            android:layout_height="2dp"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/department_image"
-            android:layout_marginTop="15dp"
-            android:background="@color/sub_color"
-            />
     </RelativeLayout>
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
