@@ -43,17 +43,8 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation ("jakarta.persistence:jakarta.persistence-api:3.0.0")
-    implementation ("org.hibernate.orm:hibernate-core:5.6.3.Final")
-    annotationProcessor ("org.projectlombok:lombok:1.18.20")
-
-    implementation ("org.springframework.boot:spring-boot-starter-web")
-    compileOnly ("org.projectlombok:lombok")
-    annotationProcessor ("org.projectlombok:lombok")
-    testImplementation ("org.springframework.boot:spring-boot-starter-test")
-
-    // DB 연동 라이브러리
-    implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation ("org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.4.1'")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
 
 

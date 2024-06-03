@@ -1,13 +1,11 @@
 package com.example.garon.domain;
 
-
-import java.sql.Date;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 
 @Entity
 public class Form {
@@ -18,7 +16,7 @@ public class Form {
     private Long id;
 
     @Column(name = "startDate", nullable = false)
-    private Date startDate;
+    private String startDate;
 
     @Column(name = "startTime", nullable = false)
     private String startTime;
@@ -35,24 +33,11 @@ public class Form {
     @Column(name = "phone", nullable = false)
     private String phone;
 
-    public Form() {
-        // Default constructor for JPA
-    }
-
-    public Form(Date startDate, String startTime, Long studentId, String name, String sex, String phone) {
-        this.startDate = startDate;
-        this.startTime = startTime;
-        this.studentId = studentId;
-        this.name = name;
-        this.sex = sex;
-        this.phone = phone;
-    }
-
     public Long getId() {
         return id;
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
@@ -76,7 +61,7 @@ public class Form {
         return phone;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
