@@ -13,7 +13,7 @@
             android:layout_height="846dp"
             android:orientation="vertical"
             >
-
+<!--스케줄 입력하기 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,6 +32,7 @@
                     app:layout="@layout/input_text"
                     >
                 </TextView>
+<!--날짜 입력창-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -57,9 +58,8 @@
                         android:labelFor="@+id/day_label"
                         />
                 </LinearLayout>
-
+<!--시간 입력창-->
                 <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -86,7 +86,8 @@
                 </LinearLayout>
 
             </LinearLayout>
-<!--  개인정보 입력하기 -->
+
+<!-- 개인정보 입력하기 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,8 +105,8 @@
                     app:layout="@layout/input_text"
                     >
                 </TextView>
+<!--학번 입력창-->
                 <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -131,28 +132,108 @@
                         android:hint="학번을 입력해주세요"
                         android:selectAllOnFocus="true"
                         android:textColorHighlight="@color/highlight_color"
-
                         />
                 </LinearLayout>
-            </LinearLayout>
-
-            <RelativeLayout
-                android:id="@+id/button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/button"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
+<!--이름 입력창-->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
-                    android:layout_centerHorizontal="true"
-                    android:text="신청하기"
-                    android:textAppearance="@style/button_style"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="이름 *"
+                        android:textAppearance="@style/text_detail_style"
+                        >
+                    </TextView>
+                    <EditText
+                        android:id="@+id/name_id_input"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:textAppearance="@style/text_hint_style"
+                        android:hint="이름을 입력해주세요"
+                        android:selectAllOnFocus="true"
+                        android:textColorHighlight="@color/highlight_color"
+                        />
+                </LinearLayout>
+<!--성별 입력창-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="성별 *"
+                        android:textAppearance="@style/text_detail_style"
+                        >
+                    </TextView>
+                    <EditText
+                        android:id="@+id/sex_id_input"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:textAppearance="@style/text_hint_style"
+                        android:hint="성별을 선택해주세요"
+                        android:selectAllOnFocus="true"
+                        android:textColorHighlight="@color/highlight_color"
+                        />
+                </LinearLayout>
+<!--전화번호 입력창-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="전화번호 *"
+                        android:textAppearance="@style/text_detail_style"
+                        >
+                    </TextView>
+                    <EditText
+                        android:id="@+id/phonenum_id_input"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:textAppearance="@style/text_hint_style"
+                        android:hint="전화번호를 '-' 제외하고 입력해주세요"
+                        android:selectAllOnFocus="true"
+                        android:textColorHighlight="@color/highlight_color"
+                        />
+                </LinearLayout>
 
+            </LinearLayout>
+<!--신청하기 버튼-->
+            <Button
+                android:id="@+id/button_id"
+                android:layout_width="365dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button"
+                android:text="신청하기"
+                android:textAppearance="@style/button_style"
+                />
 
-            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
