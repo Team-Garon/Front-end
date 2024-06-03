@@ -22,7 +22,7 @@
         android:layout_gravity="center"
         android:padding="10dp"
         android:background="@drawable/edittext_background"
-        android:textAppearance="style"
+        android:textAppearance="@style/text_hint_style"
         android:labelFor="@+id/day_label"
         />
 

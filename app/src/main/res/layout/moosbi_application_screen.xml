@@ -55,7 +55,7 @@
                         android:layout_gravity="center"
                         android:padding="10dp"
                         android:background="@drawable/edittext_background"
-                        android:textAppearance="style"
+                        android:textAppearance="@style/text_hint_style"
                         android:labelFor="@+id/day_label"
                         android:hint="2024-06-03 형식으로 입력해주세요"
                         />
@@ -83,7 +83,7 @@
                         android:layout_gravity="center"
                         android:padding="10dp"
                         android:background="@drawable/edittext_background"
-                        android:textAppearance="style"
+                        android:textAppearance="@style/text_hint_style"
                         />
                 </LinearLayout>
 
